@@ -10,6 +10,11 @@
     We are using node <script>document.write(process.versions.node)</script>,
     Chromium <script>document.write(process.versions.chrome)</script>,
     and Electron <script>document.write(process.versions.electron)</script>.
+      <script> var electron = require('electron');
+var currentWindow = electron.remote.getCurrentWindow(); document.write(currentWindow.settings.get('name.first'))
+document.write(currentWindow.data)
+
+      </script>
   </body>
 
   <script>
